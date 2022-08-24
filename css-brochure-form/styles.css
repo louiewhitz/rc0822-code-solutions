@@ -1,6 +1,6 @@
 .container {
-  width: vw20;
-  margin: 30%;
+  max-width: 350px;
+  margin: 5% auto;
 }
 
 h2 {
