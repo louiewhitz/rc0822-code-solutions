@@ -1,0 +1,18 @@
+button {
+  padding: 8px 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.black-white {
+  background-color: black;
+  color: white;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgb(212 207 207);
+}
