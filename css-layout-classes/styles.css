@@ -1,0 +1,33 @@
+.body {
+  margin: 0;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-third {
+  flex-basis: 33%;
+}
+
+.column-fourth {
+  width: calc(100% / 4);
+}
+
+.column-two-third {
+  flex-basis: 66%;
+}
+
+img {
+  width: 100%;
+}
