@@ -9,8 +9,23 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "thebearingedge.lfz-code"
-      ]
+		"thebearingedge.lfz-code",
+		"whtouche.vscode-js-console-utils",
+		"kamikillerto.vscode-colorize",
+		"IBM.output-colorizer",
+		"Attosol.colorify",
+		"ms-vscode.mono-debug",
+		"Theoistic.cursive",
+		"aaronthomas.vscode-snazzy-operator",
+		"krembolabs.comment-styler",
+		"midnightsyntax.vscode-wrap-console-log",
+		"urbantrout.refactor-css",
+		"AhadCove.js-quick-console",
+		"chiragpat.tomorrow-and-tomorrow-night-operator-mono-theme",
+		"yusukehirao.vscode-markuplint",
+		"Edward.google-fonts-instant-import",
+		"ellreka.tailwindcss-highlight"
+	]
     }
   },
   "postCreateCommand": "[ ! -f package-lock.json ] || npm ci; sudo chown -R dev:dev ~/.ssh && chmod 700 ~/.ssh && chmod 600 ~/.ssh/* && chmod 644 ~/.ssh/*.pub",
