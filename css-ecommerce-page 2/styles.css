@@ -1,0 +1,69 @@
+body {
+  width: 100vw;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 5% auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.col-5 {
+  flex-basis: 20%;
+  margin: 1% 10px;
+}
+
+.image-container {
+  width: 100%;
+  height: 85%;
+  display: block;
+}
+
+.text-container {
+  width: 100%;
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+span {
+  color: rgb(182 178 178);
+}
+
+.num {
+  color: black;
+  background-color: antiquewhite;
+}
+
+h3 {
+  font-family: Barlow, sans-serif;
+  font-weight: 600;
+  font-size: 50%;
+}
+
+/* utility classes */
+.fill {
+  object-fit: fill;
+}
+
+.space-between {
+  justify-content: space-between;
+}
