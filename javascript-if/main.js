@@ -24,7 +24,7 @@ function isEven(number) {
 }
 
 function startsWithJ(string) {
-  if (string[0] === 'j' || string[0] === 'J') {
+  if (string[0] === 'J') {
     return true;
   }
   return false;
@@ -54,10 +54,10 @@ function categorizeAcidity(pH) {
   if (pH === 7) {
     return 'neutral';
   } else
-  if ((pH <= 7) && (pH >= 0)) {
+  if ((pH < 7) && (pH >= 0)) {
     return 'acid';
   } else
-  if (pH <= 14 && pH >= 7) {
+  if (pH <= 14 && pH > 7) {
     return 'base';
   } else {
     return 'invalid ph level';
