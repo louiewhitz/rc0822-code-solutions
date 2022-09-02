@@ -10,21 +10,7 @@
     "vscode": {
       "extensions": [
 		"thebearingedge.lfz-code",
-		"whtouche.vscode-js-console-utils",
-		"kamikillerto.vscode-colorize",
-		"IBM.output-colorizer",
-		"Attosol.colorify",
-		"ms-vscode.mono-debug",
-		"Theoistic.cursive",
-		"aaronthomas.vscode-snazzy-operator",
-		"krembolabs.comment-styler",
-		"midnightsyntax.vscode-wrap-console-log",
-		"urbantrout.refactor-css",
-		"AhadCove.js-quick-console",
-		"chiragpat.tomorrow-and-tomorrow-night-operator-mono-theme",
-		"yusukehirao.vscode-markuplint",
-		"Edward.google-fonts-instant-import",
-		"ellreka.tailwindcss-highlight"
+
 	]
     }
   },
