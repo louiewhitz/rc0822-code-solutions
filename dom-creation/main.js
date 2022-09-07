@@ -87,7 +87,4 @@ var row = document.querySelector('.row');
 for (var i = 0; i < pokedex.length; i++) {
   var $pokeDex = renderPokemon(pokedex[i]);
   row.appendChild($pokeDex);
-
 }
-
-renderPokemon(pokedex);
