@@ -10,7 +10,7 @@
     "vscode": {
       "extensions": [
 		"thebearingedge.lfz-code",
-
+		"WallabyJs.quokka-vscode"
 	]
     }
   },
