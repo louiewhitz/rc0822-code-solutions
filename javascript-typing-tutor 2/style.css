@@ -5,6 +5,7 @@
 
 body {
   white-space: pre;
+  background-color: rgb(228 243 247);
 }
 
 .container {
@@ -47,6 +48,8 @@ body {
 
 span {
   text-align: center;
+  transition: color 0.3s ease-in;
+  transition: border-bottom-color 0.3s ease-in;
 }
 
 span.incorrect {
