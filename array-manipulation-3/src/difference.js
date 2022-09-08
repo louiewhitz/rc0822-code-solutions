@@ -1,42 +1,27 @@
 /* exported difference */
 function difference(first, second) {
   // create an empty final array
-  var arr = [];
-  var final = [];
+
+  var output = [];
+  // create a loop to loop through first
+  // add the keys into final array
   for (var i = 0; i < first.length; i++) {
-    var firstWords = first[i];
-    arr.push(firstWords);
-
-    // console.log('~ firstWords', firstWords);
-
+    var firstChar = first[i];
+    output.push(firstChar);
   }
-
+  // create a loop to loop through second
   for (var j = 0; j < second.length; j++) {
-    // var secondWords = second[j];
-  //   if (first.indexOf(secondWords) === -1) {
-  //  }
-
-    // console.log('~ secondWords', secondWords);
-  }
-  // console.log('arr', arr);
-  // for (var x = 0; x < arr.length; x++) {
-  //   var char = arr[x];
-  //   for (var y = 0; y < arr.length; y++) {
-  //     if (!final.includes(char)) {
-  //       final.push(char);
-
-  //       console.log('~ final', final);
-  //     }
-  //   }
-  // }
-
-  // if (firstWords !== secondWords) {
-  //   arr.push(firstWords);
-  // }
-  // if (secondWords !== firstWords) {
-  //   arr.push(secondWords);
-  //   console.log(arr);
-  // }
-
-  return final;
+    var secondChar = second[j];
+    // conditional check whether first can check the index of second
+    // add values to final
+    if (first.indexOf(secondChar) === -1) {
+      output.push(secondChar);
+      // check if index of final has more indexes than 1 or 0
+    } else if (output.indexOf(secondChar) >= 0) {
+      // remove it if it does
+      var remove = output.indexOf(secondChar);
+      output.splice(remove, 1);
+    }
+    // return the output
+  } return output;
 }
