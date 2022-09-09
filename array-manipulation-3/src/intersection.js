@@ -1,7 +1,14 @@
 /* exported intersection */
 function intersection(first, second) {
   // create an empty array for the output
-  // loop through both arrays
-  // check if they have the value or if its more than 1 in either
-  // push into final array
+  var output = [];
+  // loop one array
+  for (var i = 0; i < first.length; i++) {
+    // check whether the second array has any elements in the first
+    if (second.includes(first[i])) {
+      // push the result into the output
+      output.push(first[i]);
+    }
+  }
+  return output;
 }
