@@ -67,22 +67,9 @@ var winner = Math.max(sum4, sum1, sum2, sum3);
 if (sum4 === winner) {
   console.log(player4.name + ' at ' + sum4 + ' points wins');
 } else if (sum1 === winner) {
-  console.log(player1.name + ' at ' + sum1 + ' points wins');
+  console.log(player3.name + ' at ' + sum3 + ' points wins');
 } else if (sum2 === winner) {
   console.log(player2.name + ' at ' + sum2 + ' points wins');
 } else {
   console.log(player1.name + ' at ' + sum1 + ' points wins');
 }
-
-// var suitObject = [{
-//   suit1: 'Diamonds',
-//   suit2: 'Hearts',
-//   suit3: 'Spades',
-//   suit4: 'Clubs'
-// }];
-
-// for (var keys in card52) {
-//   var key = keys;
-// }
-
-// create point system array;
