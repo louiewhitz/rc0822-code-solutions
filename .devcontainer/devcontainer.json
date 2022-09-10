@@ -10,7 +10,19 @@
     "vscode": {
       "extensions": [
 		"thebearingedge.lfz-code",
-		"WallabyJs.quokka-vscode"
+		"WallabyJs.quokka-vscode",
+		"metaseed.MetaJump",
+		"hoovercj.vscode-power-mode",
+		"sketchbuch.vsc-quokka-statusbar",
+		"letrieu.turbo-console-log-fork",
+		"ChakrounAnas.turbo-console-log",
+		"metaseed.metago",
+		"formulahendry.auto-rename-tag",
+		"wayou.vscode-todo-highlight",
+		"evondev.generate-css-class",
+		"thebearingedge.livereload-server",
+		"WallabyJs.wallaby-vscode",
+		"aidencuneo.quokkasyntax"
 	]
     }
   },

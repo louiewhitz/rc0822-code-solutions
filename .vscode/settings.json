@@ -1,9 +1,26 @@
 {
   "workbench.colorCustomizations": {
-    "activityBar.background": "#F2C57C",
-    "activityBar.foreground": "#494b44",
-    "activityBar.inactiveForeground": "#494b4477",
-    "activityBarBadge.background": "#bf0060",
-    "activityBarBadge.foreground": "#e7e7e7"
-  }
+    "activityBar.activeBackground": "#d1349a",
+    "activityBar.background": "#d1349a",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#394e12",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "panel.border": "#d1349a",
+    "statusBar.background": "#ab277d",
+    "statusBar.debuggingBackground": "#27ab55",
+    "statusBar.debuggingForeground": "#e7e7e7",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#d1349a",
+    "statusBarItem.remoteBackground": "#ab277d",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#ab277d",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#ab277d99",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "tab.activeBorder": "#d1349a"
+  },
+  "peacock.remoteColor": "#ab277d",
+  "turboConsoleLog.addSemicolonInTheEnd": true
 }
