@@ -22,7 +22,8 @@
 		"evondev.generate-css-class",
 		"thebearingedge.livereload-server",
 		"WallabyJs.wallaby-vscode",
-		"aidencuneo.quokkasyntax"
+		"aidencuneo.quokkasyntax",
+		"vincaslt.highlight-matching-tag"
 	]
     }
   },
