@@ -23,5 +23,6 @@
     "editorGroup.border": "#d1349a"
   },
   "peacock.remoteColor": "#ab277d",
-  "turboConsoleLog.addSemicolonInTheEnd": true
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "editor.fontFamily": "Fira Code iScript"
 }

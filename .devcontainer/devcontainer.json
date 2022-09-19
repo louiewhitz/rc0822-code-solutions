@@ -23,7 +23,8 @@
 		"thebearingedge.livereload-server",
 		"WallabyJs.wallaby-vscode",
 		"aidencuneo.quokkasyntax",
-		"vincaslt.highlight-matching-tag"
+		"vincaslt.highlight-matching-tag",
+		"TechHarvesting.power"
 	]
     }
   },
