@@ -24,5 +24,7 @@
   },
   "peacock.remoteColor": "#ab277d",
   "turboConsoleLog.addSemicolonInTheEnd": true,
-  "editor.fontFamily": "Fira Code iScript"
+  "editor.fontFamily": "'OperatorMono-LightItalic'",
+
+  "editor.fontSize": 13
 }
