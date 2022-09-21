@@ -12,7 +12,7 @@
   },
   "peacock.remoteColor": "#ab277d",
   "turboConsoleLog.addSemicolonInTheEnd": true,
-  "editor.fontFamily": "'OperatorMono-LightItalic'",
+  "editor.fontFamily": "Fira Code iScript",
 
   "editor.fontSize": 13
 }
