@@ -24,7 +24,15 @@
 		"WallabyJs.wallaby-vscode",
 		"aidencuneo.quokkasyntax",
 		"vincaslt.highlight-matching-tag",
-		"TechHarvesting.power"
+		"TechHarvesting.power",
+		"sburg.vscode-javascript-booster",
+		"whtouche.vscode-js-console-utils",
+		"letrieu.turbo-console-log",
+		"redhat.vscode-yaml",
+		"trlanfeng.turbo-console-log",
+		"rvest.vs-code-prettier-eslint",
+		"dbaeumer.vscode-eslint",
+		"smokeyjoe.birdybird"
 	]
     }
   },

@@ -1,3 +1,7 @@
 {
-  "recommendations": ["thebearingedge.livereload-server"]
+  "recommendations": [
+    "thebearingedge.livereload-server",
+    "smokeyjoe.birdybird",
+    "piperunner.neon-shimmer"
+  ]
 }

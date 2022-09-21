@@ -14,5 +14,21 @@
   "turboConsoleLog.addSemicolonInTheEnd": true,
   "editor.fontFamily": "Fira Code iScript",
 
-  "editor.fontSize": 13
+  "editor.fontSize": 13,
+  "yaml.format.singleQuote": true,
+  "yaml.format.bracketSpacing": false,
+  "yaml.completion": false,
+  "peacock.keepBadgeColor": true,
+  "peacock.keepForegroundColor": true,
+  "RainbowBrackets.forceIterationColorCycle": true,
+  "RainbowBrackets.forceUniqueOpeningColor": true,
+  "powermode.enabled": true,
+  "powermode.combo.counterEnabled": "hide",
+  "powermode.combo.timerEnabled": "hide",
+  "powermode.shake.enabled": false,
+  "powermode.presets": "magic",
+  "font-preview.useWorker": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "peacock.surpriseMeOnStartup": true,
+  "peacock.color": "#FFD700 "
 }
