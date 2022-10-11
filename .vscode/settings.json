@@ -10,7 +10,7 @@
   },
   "peacock.remoteColor": "#ab277d",
   "turboConsoleLog.addSemicolonInTheEnd": true,
-  "editor.fontFamily": "Fira Code iScript",
+  "editor.fontFamily": "Cascadia Code PL",
 
   "editor.fontSize": 13,
   "yaml.format.singleQuote": true,
