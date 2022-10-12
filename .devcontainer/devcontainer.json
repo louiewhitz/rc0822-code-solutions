@@ -33,7 +33,8 @@
 		"rvest.vs-code-prettier-eslint",
 		"dbaeumer.vscode-eslint",
 		"smokeyjoe.birdybird",
-		"tgreen7.vs-code-node-require"
+		"tgreen7.vs-code-node-require",
+		"VisualStudioExptTeam.vscodeintellicode"
 	]
     }
   },
