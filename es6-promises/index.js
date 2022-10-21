@@ -12,4 +12,3 @@ promiseObj.catch(err => {
   return err;
 });
 
-console.log(promiseObj);
