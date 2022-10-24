@@ -108,7 +108,24 @@ app.delete('/api/grades/:gradeId', (req, res) => {
   } else if (!Number.isInteger(deleted) || deleted <= 0) {
     res.status(404).json({ Error: `The gradeId ${deleted} does not exist` });
   }
-  // const params = [deleted];
+  const params = [deleted];
+  const sql = `delete
+  from "grades"
+  where "gradeId" = $1
+  returning *;`;
+  db.query(sql, params)
+    .then(result => {
+      const deletedGrade = result.rows[0];
+      if (!deletedGrade) {
+        res.status(404).json({ Error: `That grade with gradeId ${deleted} does not exist` });
+      } else {
+        res.status(204).json(deletedGrade);
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(500).json({ Error: 'Internal issue occurred' });
+    });
 
 });
 
