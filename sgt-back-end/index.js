@@ -60,7 +60,7 @@ app.post('/api/grades', (req, res) => {
     });
 });
 
-app.put('api/grades/:gradeId', (req, res) => {
+app.put('/api/grades/:gradeId', (req, res) => {
   const updateGrade = Number(req.body.score);
   const updateId = Number(req.params.gradeId);
   if (
@@ -69,13 +69,14 @@ app.put('api/grades/:gradeId', (req, res) => {
     req.body.course === undefined ||
     updateGrade <= 0
   ) {
-    res.status(400).json({ Error: `Invalid ${updateId}` });
-  } else if (!Number.isInteger(updateId) || updateId <= 0) {
+    res.status(400).json({ Error: `Invalid ${updateGrade}` });
+    return;
+  } else if (Number.isInteger(updateId) === false || updateId <= 0) {
     res
-      .status(404)
-      .json({ Error: `Sorry, this ${updateId} is not in our databasee` });
+      .status(400)
+      .json({ Error: `Sorry, this ${updateId} is not in our database` });
   }
-  const params = [updateGrade, req.body.name, req.body.course, updateId];
+  const params = [req.body.name, req.body.course, updateGrade, updateId];
 
   const sql = `update "grades"
   set "name" = $1,
@@ -97,6 +98,18 @@ app.put('api/grades/:gradeId', (req, res) => {
       console.error(err);
       res.status(500).json({ Error: 'Sorry, internal error' });
     });
+});
+
+app.delete('/api/grades/:gradeId', (req, res) => {
+  const deleted = Number(req.params.gradeId);
+  if (Number.isInteger(deleted) === false) {
+    res.status(400).json({ Error: 'Invalid, gradeId must be a number' });
+
+  } else if (!Number.isInteger(deleted) || deleted <= 0) {
+    res.status(404).json({ Error: `The gradeId ${deleted} does not exist` });
+  }
+  // const params = [deleted];
+
 });
 
 app.listen(3000, () => {
