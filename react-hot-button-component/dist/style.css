@@ -1,0 +1,35 @@
+.btn {
+  border: none;
+  font-size: 2rem;
+  margin: 2.5rem;
+  padding: 1.5rem 2.5rem;
+}
+
+.btn-blue {
+  background-color: darkblue;
+  color: white;
+}
+
+.btn-purple {
+  background-color: blueviolet;
+}
+
+.btn-pink {
+  background-color: pink;
+  color: darkblue;
+}
+
+.btn-orange {
+  color: black;
+  background-color: orange;
+}
+
+.btn-yellow {
+  background-color: yellow;
+  color: black;
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
+}
