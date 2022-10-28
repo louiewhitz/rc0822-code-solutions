@@ -1,0 +1,25 @@
+.circle {
+  position: relative;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid blue;
+  text-align: center;
+}
+
+.count {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  font-size: 2em;
+}
+
+.fa-solid,
+.fa-pause,
+.fa-play {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  margin: auto;
+}
