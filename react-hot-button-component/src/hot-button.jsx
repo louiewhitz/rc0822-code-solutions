@@ -13,20 +13,24 @@ class HotBtn extends React.Component {
   }
 
   render() {
+    let btnClass = 'btn-blue';
 
-    if (this.state.clicks < 4) {
-      return <button className="btn-blue" onClick={this.handleClick}>Hot Button</button>;
-    } else if (this.state.clicks >= 3 && this.state.clicks < 6) {
-      return <button className="btn-purple" onClick={this.handleClick}>Hot Button</button>;
+    if (this.state.clicks >= 3 && this.state.clicks < 6) {
+      btnClass = 'btn-purple';
     } else if (this.state.clicks >= 6 && this.state.clicks < 12) {
-      return <button className="btn-pink" onClick={this.handleClick}>Hot Button</button>;
+      btnClass = 'btn-pink';
     } else if (this.state.clicks >= 12 && this.state.clicks < 15) {
-      return <button className="btn-orange" onClick={this.handleClick}>Hot Button</button>;
+      btnClass = 'btn-orange';
     } else if (this.state.clicks >= 15 && this.state.clicks < 18) {
-      return <button className="btn-yellow" onClick={this.handleClick}>Hot Button</button>;
+      btnClass = 'btn-yellow';
     } else if (this.state.clicks >= 18 && this.state.clicks < 21) {
-      return <button className="btn-white" onClick={this.handleClick}>Hot Button</button>;
+      btnClass = 'btn-white';
     }
+    return (
+      <button className={btnClass} onClick={this.handleClick}>
+        Hot Button
+      </button>
+    );
   }
 }
 
