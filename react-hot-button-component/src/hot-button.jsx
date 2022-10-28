@@ -13,6 +13,7 @@ class HotBtn extends React.Component {
   }
 
   render() {
+
     let btnClass = 'btn-blue';
 
     if (this.state.clicks >= 3 && this.state.clicks < 6) {
@@ -31,6 +32,7 @@ class HotBtn extends React.Component {
         Hot Button
       </button>
     );
+
   }
 }
 
