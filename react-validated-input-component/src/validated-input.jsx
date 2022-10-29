@@ -3,9 +3,7 @@ class ValidatedInput extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      password: '',
-      isValid: false,
-      errorMessage: 'Please enter a password'
+      password: ''
     };
 
     this.tooLittleChar = this.tooLittleChar.bind(this);
@@ -16,11 +14,8 @@ class ValidatedInput extends React.Component {
     const password = event.target.value;
     if (password.length < 7) {
       this.setState({
-        password: event.target.value,
-        isValid: false
+        password: event.target.value
       });
-    } else {
-      this.setState({ isValid: true });
     }
   }
 
