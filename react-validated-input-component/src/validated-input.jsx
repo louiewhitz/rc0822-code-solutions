@@ -11,12 +11,7 @@ class ValidatedInput extends React.Component {
 
   tooLittleChar(event) {
     this.setState({ password: event.target.value });
-    const password = event.target.value;
-    if (password.length < 7) {
-      this.setState({
-        password: event.target.value
-      });
-    }
+
   }
 
   render() {
