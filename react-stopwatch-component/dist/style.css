@@ -1,0 +1,28 @@
+.circle {
+  position: relative;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid blue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.count {
+  font-size: 2em;
+}
+
+.fa-solid,
+.fa-pause,
+.fa-play {
+  text-align: center;
+  font-size: 2em;
+  margin: 5% 50%;
+}
+
+cursor {
+  cursor: pointer;
+}
