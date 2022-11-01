@@ -1,23 +1,6 @@
 import React from 'react';
+import Dots from './dots';
 
-class Dots extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleDots = this.handleDots.bind(this);
-  }
-
-  handleDots() {
-    this.props.onClick(this.props.index);
-  }
-
-  render() {
-    return (
-      <i
-        className={`${this.props.class} fa-circle`}
-        onClick={this.handleDots}></i>
-    );
-  }
-}
 class Carousel extends React.Component {
   constructor(props) {
     super(props);
@@ -34,27 +17,11 @@ class Carousel extends React.Component {
     }, 3000);
   }
 
-  resetInterval() {
-    clearInterval(this.intervalId);
-    this.intervalId = setInterval(() => {
-      this.setState({ count: this.state.count + 1 });
-    }, 3000);
-  }
-
   componentDidUpdate() {
     const last = this.props.images.length - 1;
     if (this.state.count > last) {
       this.setState({ count: 0 });
     }
-  }
-
-  goRight() {
-    const last = this.props.images.length - 1;
-    this.state.count > last
-      ? this.setState({ count: 0 })
-      : this.setState({ count: this.state.count + 1 });
-
-    this.resetInterval();
   }
 
   goLeft() {
@@ -65,9 +32,24 @@ class Carousel extends React.Component {
     this.resetInterval();
   }
 
+  goRight() {
+    const last = this.props.images.length - 1;
+    this.state.count > last
+      ? this.setState({ count: 0 })
+      : this.setState({ count: this.state.count + 1 });
+    this.resetInterval();
+  }
+
   next(index) {
     this.setState({ count: index });
     this.resetInterval();
+  }
+
+  resetInterval() {
+    clearInterval(this.intervalId);
+    this.intervalId = setInterval(() => {
+      this.setState({ count: this.state.count + 1 });
+    }, 3000);
   }
 
   render() {
@@ -89,7 +71,6 @@ class Carousel extends React.Component {
         }`}
       />
     ));
-
     return (
       <div className="container">
         <div className="row margin-top position justify-between">
