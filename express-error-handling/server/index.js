@@ -56,10 +56,7 @@ app.post('/api/grades', (req, res, next) => {
 app.get('/api/grades/:gradeId', (req, res, next) => {
   const gradeId = Number(req.params.gradeId);
   if (!Number.isInteger(gradeId) || gradeId < 1) {
-    res.status(400).json({
-      error: 'grade must be a positive integer'
-    });
-    return;
+    throw new ClientError(400, 'grade must be a positive integer');
   }
   const sql = `
     select *
@@ -105,9 +102,7 @@ app.put('/api/grades/:gradeId', (req, res, next) => {
     .then(result => {
       const [updatedGrade] = result.rows;
       if (!updatedGrade) {
-        res.status(404).json({
-          error: `cannot find grade with gradeId ${gradeId}`
-        });
+        throw new ClientError(404, `cannot find grade with gradeId ${gradeId}`);
       } else {
         res.json(updatedGrade);
       }
