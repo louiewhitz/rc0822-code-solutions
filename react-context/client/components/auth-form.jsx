@@ -1,7 +1,5 @@
 /* eslint-disable no-console */
 import React from 'react';
-import AppContext from '../lib/app-context';
-
 export default class AuthForm extends React.Component {
   constructor(props) {
     super(props);
@@ -92,5 +90,3 @@ export default class AuthForm extends React.Component {
     );
   }
 }
-AuthForm.contextType = AppContext;
-console.log('AppContext', AppContext);
