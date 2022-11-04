@@ -1,0 +1,21 @@
+user types into username/password input (change) Authform > handleChange
+- The Authform encompasses the handleChange event.
+-if a user starts typing into the username and password on Sign up page, it triggers the handle change event updates the state
+-this also toggles the state of sign up or sign in.
+- the event.target of name and value is now setting the current state of the username and password within an object
+
+user clicks submit, in either sign in or sign up(submit) Auth form > handleSubmit
+-when user clicks submit, the handleSubmit method is fired from the Auth component.
+-here we create another instance of the user by creating action equal to the username and password object created in handleChange
+- then we set up the http request that sets the proper headers and stringified body of the current state
+- then we set up fetch request with the 'action' as either post for sign up or get and verify. Verification is checked with jwt to verify token and user -< error 404 if wrong
+-if someone clicked submit in the sign up form , the window location hash changes to sign in
+- if the user clicks submit in sign in the window and the username and password is correct, we go to the home page -> that is indicated by onSIgnIn on homepage component
+- wrong password, we get redirected to sign in again, if it was correct we get directed to the home page
+-------- signed in user stays signed in
+-> within the App component, the componentDidMount sets the state for the window location where authorization is still null. handleSign in sets the state for verification of the token and user object and in render, it allows for the signed in user to stay signed in
+the user and route saved in the state from signing in is used as context value
+
+within the same App the const Context Value encompasses the user route and whether they signed in or out
+then handle sign out actually removes react context from local storage and resets the state to user being null and unauthorized
+the navbar renders the initial sign in and sign up buttons because the user context value is null
