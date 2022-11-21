@@ -40,5 +40,6 @@
   },
   "[sql]": {
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
-  }
+  },
+  "files.autoSave": "afterDelay"
 }
